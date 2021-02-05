@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Zeeero</string>
+    <string name="app_name">Snappyy</string>
     <string name="username">Mobile</string>
     <string name="pass">Password</string>
     <string name="confirmpass">Confirm Password</string>
@@ -11,13 +11,86 @@
     <string name="autocode">Auto Code</string>
     <string name="TypeManual">Type Manual</string>
     <string name="Register">Register</string>
-    <string name="login">Login</string>
     <string name="loginto">Already registered! Login here!</string>
     <string name="regto">Register here!</string>
+    <string name="faq">FAQ</string>
+    <string name="pickupdroptext">Pickup / Drop</string>
+    <string name="textbuyany">Buy Anything</string>
+    <string name="sendrecv"> Send, Receive,\n\n
+    Any items from   \n\n
+    Nearest city to   \n\n
+    Your village      \n\n
+    </string>
+
+    <string name="buyanything">
+         Buy Anything From  \n\n
+        Your nearest city \n\n
+        and Get Delivered \n\n
+        to your village \n\n
+
+    </string>
+
 
     <string name="toprated">Top Rated Products</string>
     <string name="viewmore">View More</string>
     <string name="youmaylike">You May Like</string>
     <string name="recenltyviewed">Recently Viewed</string>
     <string name="viewall">View All</string>
+    <string name="pickup">Pick Up &amp; drop anything you want</string>
+    <string name="placepickup">place new pickup or drop order</string>
+    <string name="buy">Buy anything from any shop</string>
+    <string name="find">find shop</string>
+    <string name="send">Send, Receive ,buy,Any items from nearest city to your village</string>
+    <string name="anyitem">Any items from nearest city to your village</string>
+    <string name="place">place order</string>
+    <string name="pickupAdd">Choose Pickup Address</string>
+    <string name="dropAdd">Click here to choose Drop Address</string>
+    <string name="choosemap">Click here to choose from Map</string>
+    <string name="Orderdeta">Add Order Details</string>
+    <string name="address">Address</string>
+    <string name="weightcat">Weight Category</string>
+    <string name="landmark">Landmark</string>
+    <string name="number">Contact Number</string>
+    <string name="name">Contact Name</string>
+    <string name="selLoc">Confirm</string>
+    <string name="distance">Distance</string>
+    <string name="amount">Amount</string>
+    <string name="location">Your Location</string>
+    <string name="Kilometere">Kilometer</string>
+    <string name="usecurrentaddr">Use Current Address</string>
+    <string name="more">Add more details about this order</string>
+    <string name="text">Text here</string>
+    <string name="callus">Call us for place your order!</string>
+    <string name="login">Login Account</string>
+    <string name="pickuppt">Pick up Point</string>
+    <string name="droppt">Drop Point</string>
+    <string name="itemdetails">Item Details</string>
+    <string name="paymentopt">Payment Options</string>
+    <string name="gpay">Google Pay</string>
+    <string name="ppay">PhonePe</string>
+    <string name="paytm">Paytm</string>
+    <string name="debitcreditcard">Debit / Credit Card</string>
+    <string name="netbanking">Netbanking</string>
+    <string name="cod">Cash on Delivery</string>
+    <string name="howtoorder">How to order?</string>
+    <string name="step1">Step-1 : Choose Pick Up Address</string>
+    <string name="step2">Step-2 : Choose Drop Address</string>
+    <string name="step3">Step-3 : Add Item Details</string>
+    <string name="numoremail">Number or Email</string>
+    <string name="what">What are you sending?</string>
+    <string name="itemvlaue">Item Value</string>
+    <string name="notify">Notify me via SMS</string>
+
+
+    <string name="delivery">Delivery of Alcohol or any illegal items is prohibited by law</string>
+    <string name="google_maps_key">AIzaSyDeiUPlJ4iQelXAVtzN4fdw6PJTFSd6Pu4</string>
+
+    <string name="check_internet">check internet</string>
+
+
+    <string name="facebook_app_id">759632011625373</string>
+
+    <string name="fb_login_protocol_scheme">fb204127990172423</string>
+
+    <string name="tnc">\t\t The terms and conditions for the use of services at SNAPPYY DELIVERIES must be accepted to utilize our application.\n\n TERMS AND CONDITIONS :- \n\n 1)\t Snappyy Deliveries primarily use E-mail or message service to Communicate with you. \n\n 2)\t All buying receipts, confirmation notice And welcome message are delivered through automated communications. \n\n 3)\t Snappyy Deliveries reserve the to check or scan the goods given To then for any illegal materials and it found report to the concerned authorities. \n\n 4)\t Goods collected from stores of your choice for deliveries will be At your assurance neither SNAPPYY DELIVERIES or our Delivery partner will be responsible for things like taste, expiry date ,or goods not upto your satisfaction , our job is to deliver. \n\n 5)\t SNAPPYY DELIVERIES shall not be liable for failure to perform any part of its obligations here is where such failure is due to ;fire , flood , power failure , strikes , industrial disturbances ,war ( declared or undeclared) acts of terror ,commercially unreasonable hostile act by third party with respect to blockages , embargoes , legal restrictions governmental regulations or riots insurrections or any cause beyond the control of SNAPPYY DELIVERIES. \n\n 6)\t Full access to any service is available when you have made payment for it . \n\n 7)\t SNPPYY DELIVERIES reserve the right to make additions , deletions , or modifications to the content or the services at any time without prior notice.\n\n 8) \t There is no cancellations and refund policy. \n\n\n\t SNAPPYY DELIVERIES does not allow cancelling the process of payments or refund the paid amount for the service opted ,however if a perticular goods for some reason is not available at store opted can be delivered from elsewhere. \n</string>
 </resources>

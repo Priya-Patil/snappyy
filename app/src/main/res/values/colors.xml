@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-       <color name="colorPrimary">#CA4343</color>
+       <color name="colorPrimary">#72D0F4</color>
+       <color name="colorPrimaryDark">#2E4268</color>
+    <color name="colorNavyblue">#132051</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -14,12 +17,13 @@
     <color name="light_gray">#FAFAFA</color>
     <color name="darker_gray">#8F8F8F</color>
 
-    <color name="colorPrimaryDark">#69d296</color>
-    <color name="colorAccent">#69d296</color>
+    <color name="colorAccent">#72D0F4</color>
     <color name="colorwhite">#ffffff</color>
     <color name="colorGrey">#696969</color>
     <color name="colorBlack">#FF000000</color>
     <color name="colorText">#FF000000</color>
+    <color name="black_light">#EE424141</color>
+    <color name="grey_10">#e6e6e6</color>
 
     <color name="colorView">#8F8F8F</color>
 

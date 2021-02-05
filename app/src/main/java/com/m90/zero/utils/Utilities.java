@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -33,6 +34,21 @@ import java.util.regex.Pattern;
 public class Utilities {
 
     private static final String TAG = Utilities.class.getSimpleName();
+
+    public static final String SHARED_PREF = "session";
+
+    public static void saveUserData(Context context, String key, String value) {
+        SharedPreferences pref = context.getSharedPreferences(SHARED_PREF, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString(key, value);
+        editor.commit();
+    }
+
+    public static String getSavedUserData(Context context, String key) {
+        SharedPreferences pref = context.getSharedPreferences(SHARED_PREF, Context.MODE_PRIVATE);
+        return pref.getString(key, "");
+
+    }
 
     public static void launchActivity(Activity activity, Class<?> mClass, boolean shouldFinishParent, Bundle bundle) {
         Intent intent = new Intent(activity, mClass);

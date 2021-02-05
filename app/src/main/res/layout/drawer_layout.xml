@@ -1,9 +1,10 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/Scrll_Drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="left|start"
+    android:layout_gravity="right"
     android:background="@android:color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
@@ -42,16 +43,18 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/img_profileMale"
                     android:layout_width="290dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="@dimen/padding_20"
+                    android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     app:cardElevation="10dp">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/logo" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:src="@drawable/logosnappyy"
+                        android:visibility="visible"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
                 </androidx.cardview.widget.CardView>
 
                 <TextView
@@ -59,13 +62,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/img_profileMale"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="15dp"
                     android:text="User Name"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:id="@+id/tv_mobile"
@@ -76,7 +80,8 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
@@ -89,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rl_profile"
-            android:layout_marginTop="-60dp"
+            android:layout_marginTop="-50dp"
             android:layout_marginBottom="2dp"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -130,10 +135,155 @@
 
             </RelativeLayout>
 
+             <RelativeLayout
+                android:id="@+id/rl_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pick"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_home_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iv_pick"
+                    android:gravity="center_vertical"
+                    android:text="My Orders"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/nav_drawer_text" />
+
+            </RelativeLayout>
+
+             <RelativeLayout
+                android:id="@+id/rl_buyany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_buyany"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shopping_bag"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_buyany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iv_buyany"
+                    android:gravity="center_vertical"
+                    android:text="Buy Anything"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/nav_drawer_text" />
+
+            </RelativeLayout>
+
+             <RelativeLayout
+                android:id="@+id/rl_sendrecv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_sendrecv"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_time"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_sendrecv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iv_sendrecv"
+                    android:gravity="center_vertical"
+                    android:text="Pick &amp; Drop from nearest city"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/nav_drawer_text" />
+
+            </RelativeLayout>
+
+             <RelativeLayout
+                android:id="@+id/rl_profile_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_profile_click"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iv_profile_click"
+                    android:gravity="center_vertical"
+                    android:text="Profile"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/nav_drawer_text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_buynearestcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_notifications"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_notifications_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iv_notifications"
+                    android:gravity="center_vertical"
+                    android:text="Buy anything from nearest city"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/nav_drawer_text" />
+
+            </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/rl_category"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_category"
@@ -161,7 +311,8 @@
             <RelativeLayout
                 android:id="@+id/rl_cart"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_cart"
@@ -189,14 +340,15 @@
             <RelativeLayout
                 android:id="@+id/rl_wishlist"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_wishlist"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_baseline_favorite_24"
+                    android:src="@drawable/ic_time"
                     app:tint="@color/black"/>
 
                 <TextView
@@ -206,7 +358,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/iv_wishlist"
                     android:gravity="center_vertical"
-                    android:text="Wishlist"
+                    android:text="Payment History"
                     android:layout_marginLeft="@dimen/padding_10"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/nav_drawer_text"
@@ -217,7 +369,8 @@
             <RelativeLayout
                 android:id="@+id/rl_Orders"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_orders"
@@ -234,7 +387,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/iv_orders"
                     android:gravity="center_vertical"
-                    android:text="Orders"
+                    android:text="Request History"
                     android:layout_marginLeft="@dimen/padding_10"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/nav_drawer_text"
@@ -245,12 +398,14 @@
             <RelativeLayout
                 android:id="@+id/rl_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_login"
                     android:layout_width="22dp"
-                    android:layout_height="22dp"
+                    android:layout_height="match_parent"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_baseline_lock_24"
                     app:tint="@color/black" />
@@ -262,6 +417,7 @@
                     android:layout_marginLeft="@dimen/padding_10"
                     android:layout_toRightOf="@+id/iv_login"
                     android:gravity="center_vertical"
+
                     android:text="Login"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/nav_drawer_text"
@@ -272,7 +428,8 @@
             <RelativeLayout
                 android:id="@+id/rl_reg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/iv_reg"
@@ -280,8 +437,7 @@
                     android:layout_height="22dp"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_baseline_person_24"
-                    app:tint="@color/black"
-                    />
+                    app:tint="@color/black"/>
 
                 <TextView
                     android:id="@+id/tv_reg"
@@ -296,7 +452,6 @@
                     android:textStyle="bold" />
 
             </RelativeLayout>
-
 
             <View
                 android:layout_width="match_parent"
@@ -316,6 +471,32 @@
                 android:gravity="center_vertical"
                 android:text="About Us"
                 android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_helpcenter"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:text="FAQ"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:text="Reviews"
+                android:textColor="@color/colorText"
                 android:textSize="12sp" />
 
             <TextView
@@ -330,17 +511,7 @@
                 android:textColor="@color/colorText"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/tv_helpcenter"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:drawablePadding="15dp"
-                android:gravity="center_vertical"
-                android:text="Help Center"
-                android:textColor="@color/colorText"
-                android:textSize="12sp" />
+
 
             <TextView
                 android:id="@+id/tv_exit"
@@ -352,7 +523,8 @@
                 android:gravity="center_vertical"
                 android:text="Logout"
                 android:textColor="@color/colorText"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone"/>
 
             <View
                 android:layout_width="match_parent"
@@ -361,7 +533,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:background="@color/colorView" />
-
 
             <TextView
                 android:id="@+id/tv_abtUs"

@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -14,12 +17,66 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".home.HomeActivity"></activity>
-        <activity android:name=".reg.RegActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".home.pickupdrop.DropSearchActivity" />
+        <activity android:name=".home.pickupdrop.SearchActivity" />
+        <activity
+            android:name=".home.pickupdrop.NewPickDropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.pickupdrop.SendRecvBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".glogin.GoolgeLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".address.BothLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locationtraceandroid.LocationTraceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".address.DropLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".facebooklogin.FActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".address.PickupLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paymenthistory.PaymentHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".request.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".request.RequestHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.pickupdrop.PickupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".address.ChooseAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.pickupdrop.DropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".splash.SplashActivity">
+        <activity
+            android:name=".login.OtpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +84,44 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".home.pickupdrop.NewShopActivity"
+            android:screenOrientation="portrait" />
+
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts" /> <!-- Places API -->
+        <!-- AIzaSyAjJ2_qYW0Isgm3tjsgJeJyZhc_jp9kM28 -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAjJ2_qYW0Isgm3tjsgJeJyZhc_jp9kM28" /> <!-- android:value="AIzaSyCOSfaaL14sdbZlS9XNKoCEbKPj6Eg-8Q0" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>
